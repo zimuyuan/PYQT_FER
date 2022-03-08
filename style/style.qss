@@ -1,0 +1,84 @@
+QMainWindow{
+    background-color: rgb(80,80,80);
+}
+
+QPushButton#btn_openCamera:hover,#btn_openimage:hover,#btn_openvideo:hover,#btn_recognition:hover,#btn_exitsystem:hover,#btn_select_model:hover{
+    border-color: #5599ff;
+    font-weight:bold;
+    color : rgb(240,240,240);
+    background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #686868,stop:1 #585858);
+}
+
+
+
+QPushButton:disabled{
+    color: gray;
+    border:hide;
+    border-radius:2px;
+    padding:0px 0px;
+    background-color: rgb(100,100,100);
+}
+
+QPushButton#btn_openCamera,#btn_openimage,#btn_openvideo,#btn_recognition,#btn_exitsystem,#btn_select_model{
+
+    border-radius: 8px;
+	color : rgb(220,220,220);
+    background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #484848,stop:1 #383838);
+}
+
+QPushButton:pressed
+{
+    color : gray;
+    background-color:rgb(62 , 62 , 62);
+    padding-left:4px;
+    padding-top:4px;
+}
+
+QLabel#lab_frame{
+    border-radius: 8px;
+    border:2px solid;
+    border-color:#919191;
+    background:rgb(255,255,255)
+}
+
+QLabel{
+    color : rgb(255,100,100);
+}
+
+QVBoxLayout#ButtonLayout{
+    border:2px solid;
+    border-color:#919191;
+    background-color: rgb(220,220,220);
+}
+
+
+
+QSlider::sub-page:horizontal
+{
+    background-color:transparent;
+    height:6px;
+}
+
+QSlider::add-page:horizontal {
+	background-color: rgb(120,120,120);
+	width:0px;
+}
+
+QSlider::groove:horizontal {
+	background:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(7,208,255, 255), stop:1 rgba(231,80,229, 255));
+	width:202px;
+}
+
+QSlider::handle:horizontal {
+	height: 6px;
+	width: 1px;
+	background: rgb(120,120,120);
+}
+
+QRadioButton#btn_useGPU{
+    image: url(:../images/radiobnt_background.png);
+}
+
+QRadioButton#btn_useGPU:hover{
+    color : rgb(240,240,240);
+}

@@ -1,0 +1,8 @@
+models
+images
+*.jpg
+*.jpeg
+*.mp4
+*.png
+.idea
+*__pycache__

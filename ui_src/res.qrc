@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="q">
+    <file>image/bg1.jpg</file>
+    <file>image/图层 1(已去底).png</file>
+  </qresource>
+</RCC>
