@@ -93,7 +93,7 @@ class MainWindow(QMainWindow, Ui_FER_window):
 
         self.init_show()
 
-        self.gifre = QMovie('../images/regif.gif')
+        self.gifre = QMovie('../img/regif.gif')
         # self.gifre.setBackgroundColor(QColor(255, 0, 0, 0))
         self.lab_frame.setMovie(self.gifre)
         self.gifre.start()
