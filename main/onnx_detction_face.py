@@ -10,7 +10,8 @@ class face_detecter:
     def __init__(self):
         # self.label_path = "../models/voc-model-labels.txt"
         # self.class_names = [name.strip() for name in open(self.label_path).readlines()]
-        self.onnx_path = "../models/onnx/Mb_Tiny_RFB_FD_train_input_320.onnx"
+        # self.onnx_path = "../models/onnx/Mb_Tiny_RFB_FD_train_input_320.onnx"
+        self.onnx_path = r"D:\lcy\FER_pyqt6\FER_pyqt6\models\onnx\Mb_Tiny_RFB_FD_train_input_320.onnx"
         self.class_names = ['BACKGROUND', 'face']
 
         self.ort_session = ort.InferenceSession(self.onnx_path)

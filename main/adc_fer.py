@@ -12,7 +12,7 @@ from torch import nn
 import torch
 from torchvision import models, transforms, datasets
 import torch.nn.functional as F
-import pretrainedmodels
+
 from torch.autograd import Variable
 import os
 import time
@@ -134,7 +134,7 @@ def preprocess_image(img, resize=224):
 
 
 class ADC_FER():
-    def __init__(self, backbone='resnet18',swap_num=[7,7], resize=256, crop=224,model= '../models/fer_model/res18_112_0.8543_32.pth',use_cuda=True):
+    def __init__(self, backbone='resnet18',swap_num=[7,7], resize=256, crop=224, model= '../models/fer_model/res18_112_0.8543_32.pth',use_cuda=True):
 
         self.backbone = backbone
         self.swap_num = swap_num
