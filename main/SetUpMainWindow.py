@@ -48,8 +48,8 @@ class MainWindow(QMainWindow, Ui_FER_window):
         self.frame_out = 0
         self.detction_switch = 0
 
-        # self.adc_fer = ADC_FER(use_cuda=False)
-        self.adc_fer = torch.load(r'D:\lcy\FER_pyqt6\FER_pyqt6\models\fer_model\resnet50_256_224_7_net_weights_0.8872.pth')
+        self.adc_fer = ADC_FER(use_cuda=True, model=r'D:\lcy\FER_pyqt6\FER_pyqt6\models\fer_model\resnet50_256_224_7_net_weights_0.8872.pth')
+        # self.adc_fer = torch.load(r'D:\lcy\FER_pyqt6\FER_pyqt6\models\fer_model\resnet50_256_224_7_net_weights_0.8872.pth')
 
 
         self.face_detecter = face_detecter()

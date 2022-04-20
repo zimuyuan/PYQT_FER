@@ -162,7 +162,7 @@ class ADC_FER():
         # net_weights = '../models/fer_model/vgg16_256_224_7_net_weights_0.8595.pth'
         # net_weights = '../models/fer_model/resnet18_256_224_4_net_weights_0.8709.pth'
         # net_weights = '../models/fer_model/resnet34_256_224_7_net_weights_0.8774.pth'
-        net_weights = '../models/fer_model/resnet50_256_224_7_net_weights_0.8872.pth'
+        net_weights = model
 
         self.loadNetModel(net_weights)
         # self.resize = int(net_weights.split('/')[-1].split('_')[1])
@@ -176,9 +176,9 @@ class ADC_FER():
         # if self.use_cuda:
         #     self.net = self.net.cuda()
 
-    def loadNetModel(self,net_weights ):
-        self.resize = int(net_weights.split('/')[-1].split('_')[1])
-        self.crop = int(net_weights.split('/')[-1].split('_')[2])
+    def loadNetModel(self, net_weights ):
+        # self.resize = int(net_weights.split('/')[-1].split('_')[1])
+        # self.crop = int(net_weights.split('/')[-1].split('_')[2])
 
         self.net = torch.load(net_weights).eval()
         # exit()
